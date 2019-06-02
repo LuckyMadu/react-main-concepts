@@ -1,7 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
-//import App from "./lesson02";
-import App from './lesson02'
+import App from "./lesson03";
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+function tick() {
+  ReactDOM.render(<App />, document.getElementById("root"));
+}
+
+setInterval(tick, 1000);
