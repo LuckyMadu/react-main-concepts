@@ -6,13 +6,17 @@ const NumberList = props => {
   /*  const listItems = numbers.map(number => (
     <li key={number.toString()}>{number}</li>
   )); */
-  const listItems = numbers.map(number => (
+ /*  const listItems = numbers.map(number => (
     <ListItem key={number.toString()} value={number} />
-  ));
+  )); */
 
   return (
     <div>
-      <ul>{listItems}</ul>
+      <ul>
+        {numbers.map(number => (
+          <ListItem key={number.toString()} value={number} />
+        ))}
+      </ul>
     </div>
   );
 };
